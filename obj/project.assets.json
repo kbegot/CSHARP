@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/kevin.begot/Documents/Isitech/c#/c#.csproj",
+      "projectUniqueName": "/Users/kevin.begot/Documents/Isitech/c#/CSHARP/c#.csproj",
       "projectName": "c#",
-      "projectPath": "/Users/kevin.begot/Documents/Isitech/c#/c#.csproj",
+      "projectPath": "/Users/kevin.begot/Documents/Isitech/c#/CSHARP/c#.csproj",
       "packagesPath": "/Users/kevin.begot/.nuget/packages/",
-      "outputPath": "/Users/kevin.begot/Documents/Isitech/c#/obj/",
+      "outputPath": "/Users/kevin.begot/Documents/Isitech/c#/CSHARP/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/kevin.begot/.nuget/NuGet/NuGet.Config"
