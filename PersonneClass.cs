@@ -9,12 +9,12 @@ public class Personne
         mScore = Score;
     }
  
-    public string Prenom
+    public string Prenom // Getter Setter de Prenom
     {
         get { return mPrenom; }
         set { mPrenom = value; }
     }
-    public int Score
+    public int Score // Getter Setter de Score
     {
         get { return mScore; }
         set { mScore = value; }

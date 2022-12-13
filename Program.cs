@@ -22,26 +22,26 @@ namespace Csharp // Note: actual namespace depends on the project name.
 
                 string choiceMenu = Console.ReadLine();
 
-                switch (choiceMenu)
+                switch (choiceMenu) // App Menu
                 {
-                    case "1" :
+                    case "1" : // Play the game
     
                         Console.Clear();
                         Console.WriteLine("Création du premier joueur: ");
-                        Personne player1 = CreatePlayer();
+                        Personne player1 = CreatePlayer(); // Create a person object using the CreatePlayer() function
 
                         Console.Clear();
                         Console.WriteLine("Création du deuxième joueur: ");
-                        Personne player2 = CreatePlayer();
+                        Personne player2 = CreatePlayer(); // Create a person object using the CreatePlayer() function
 
                         Console.Clear();
                         Console.WriteLine("Appuiez sûr [Enter] pour lancer de la partie: ("+player1.Prenom +" vs "+ player2.Prenom +")");
                         Console.ReadLine();
 
-                        GameEngine.Start(result, board, playerTurn, player1, player2);
+                        GameEngine.Start(result, board, playerTurn, player1, player2); // Start the game with the GameEngine class
                         break;  
 
-                    case "2" : 
+                    case "2" : // Read the rules
                         Console.Clear();
                         Console.WriteLine("Règle du jeu : \n\nLe morpion ce joue sur une grille de 3 cases sur 3.");
                         Console.WriteLine("Le but du jeu est d’aligner avant son adversaire 3 symboles identiques horizontalement, verticalement ou en diagonale."); 
@@ -50,20 +50,20 @@ namespace Csharp // Note: actual namespace depends on the project name.
                         Console.Clear();
                         break;
 
-                    case "3" :
+                    case "3" : // Exit
                         Console.Clear();
                         Environment.Exit(0);
                         break;
                     default:
                     Console.Clear();
-                    Console.WriteLine("Veuilliez rentrez un chiffre valide");
+                    Console.WriteLine("Veuillez entrer un chiffre valide");
                     break;
                 }        
             }
-            Personne CreatePlayer()
+            Personne CreatePlayer()  // Function that allows you to create a Person
             {
                 string prenom;
-                Console.WriteLine("\nRentrez votre Prénom: ");
+                Console.WriteLine("\nEntrer votre Prénom: ");
                 prenom = Console.ReadLine();
                 Personne p = new Personne(prenom, 0);
                 return p;

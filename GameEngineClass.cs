@@ -48,9 +48,7 @@ namespace Csharp // Note: actual namespace depends on the project name.
                                         Console.WriteLine("\n" + player1.Prenom + ": " + player1.Score + " Poin(s)\n" + player2.Prenom + ": " + player2.Score + " Point(s)");
                                         break;
                                     }
-                                }
-
-                            
+                                }                         
                                 if (!result)
                                 {
                                     Console.WriteLine("\nRejouer [enter] | Quitter [Q]");
